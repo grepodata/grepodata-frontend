@@ -33,7 +33,7 @@
     "@ngx-share/button": "^7.0.0",
     "@ngx-share/buttons": "^7.0.0",
     "@ngx-share/core": "^7.0.0",
-    "@swimlane/ngx-charts": "^12.0.1",
+    "@swimlane/ngx-charts": "^12.1.0",
     "@types/bootstrap": "^4.1.2",
     "ajv": "^6.5.5",
     "ajv-keywords": "^3.2.0",

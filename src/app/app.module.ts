@@ -226,8 +226,7 @@ export function jwtTokenGetter(): any {
     GoogleAnalyticsEventsService,
     Globals
   ],
-  bootstrap: [AppComponent],
-  entryComponents: [TownDialog, DisclaimerDialog, ContactDialog, ChangekeyDialog, CleanIntelDialog, IndexDisclaimerDialog, NewIndexDialog, ResetOwnersDialog, ForgotKeysDialog, EditOwnersDialog, InstallDialog, BBDialog, BBScoreboardDialog, OverviewDialog, ConquestDialog, PlayerOverviewDialog, AllianceOverviewDialog, CompareSnackbar]
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 

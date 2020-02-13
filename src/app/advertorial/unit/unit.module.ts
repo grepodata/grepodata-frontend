@@ -12,7 +12,7 @@ import {UnitComponent} from "./unit.component";
 	]
 })
 export class UnitModule {
-	static forRoot(): ModuleWithProviders {
+	static forRoot(): ModuleWithProviders<UnitModule> {
 		return {
 			ngModule: UnitModule,
 			providers: [],

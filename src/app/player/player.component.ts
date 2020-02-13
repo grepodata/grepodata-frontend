@@ -17,7 +17,7 @@ import {Globals} from "../globals";
   providers: [PlayerService, WorldService]
 })
 export class PlayerComponent implements OnInit {
-	@ViewChild("infoTabs", {static: false}) infoTabs: ElementRef;
+	@ViewChild("infoTabs") infoTabs: ElementRef;
 
   // Chart vars
   data_default: any[];

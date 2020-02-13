@@ -13,7 +13,7 @@ import { MatDialog } from "@angular/material/dialog";
 	providers: [JwtService, RecaptchaComponent]
 })
 export class LoginComponent implements OnInit {
-	@ViewChild(RecaptchaComponent, {static: false}) captchaRef:RecaptchaComponent;
+	@ViewChild(RecaptchaComponent) captchaRef:RecaptchaComponent;
 
 	@Input() embedded: boolean;
 	@Input() embeddedCallback: any;

@@ -28,13 +28,13 @@ import {match} from "minimatch";
   providers: [ScoreboardService, LocalCacheService, WorldService, SearchService, ConquestService]
 })
 export class ScoreboardComponent implements OnInit {
-	@ViewChild('searchPlayerOff', {static: false, read: ElementRef}) searchPlayerOff: ElementRef;
-	@ViewChild('searchPlayerDef', {static: false, read: ElementRef}) searchPlayerDef: ElementRef;
-	@ViewChild('overviewContainer', {static: false}) overviewContainer: ElementRef;
-	@ViewChild('worldMap', {static: false}) worldMap: ElementRef;
-	@ViewChild('worldMapContainer', {static: false}) worldMapContainer: ElementRef;
-	@ViewChild('mapTooltipContainer', {static: false}) mapTooltipContainer: ElementRef;
-	@ViewChild('mapTip', {static: false}) mapTip: ElementRef;
+	@ViewChild('searchPlayerOff', { read: ElementRef }) searchPlayerOff: ElementRef;
+	@ViewChild('searchPlayerDef', { read: ElementRef }) searchPlayerDef: ElementRef;
+	@ViewChild('overviewContainer') overviewContainer: ElementRef;
+	@ViewChild('worldMap') worldMap: ElementRef;
+	@ViewChild('worldMapContainer') worldMapContainer: ElementRef;
+	@ViewChild('mapTooltipContainer') mapTooltipContainer: ElementRef;
+	@ViewChild('mapTip') mapTip: ElementRef;
 
   // API data
   playerData = '' as any;

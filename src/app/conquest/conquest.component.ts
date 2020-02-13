@@ -22,10 +22,10 @@ import {hasOwnProperty} from "tslint/lib/utils";
   providers: [ConquestService]
 })
 export class ConquestComponent implements AfterViewInit, OnChanges {
-	@ViewChild('conqdate', {static: false, read: ElementRef}) filterDate: ElementRef;
-	@ViewChild('conqcity', {static: false, read: ElementRef}) filterCity: ElementRef;
-	@ViewChild('conqoname', {static: false, read: ElementRef}) filterOldName: ElementRef;
-	@ViewChild('conqnname', {static: false, read: ElementRef}) filterNewName: ElementRef;
+	@ViewChild('conqdate', { read: ElementRef }) filterDate: ElementRef;
+	@ViewChild('conqcity', { read: ElementRef }) filterCity: ElementRef;
+	@ViewChild('conqoname', { read: ElementRef }) filterOldName: ElementRef;
+	@ViewChild('conqnname', { read: ElementRef }) filterNewName: ElementRef;
 
 	@Input() embedded: boolean;
 	@Input() minimal: boolean;

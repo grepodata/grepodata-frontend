@@ -12,7 +12,7 @@ import {RecaptchaComponent} from "ng-recaptcha";
 	providers: [JwtService, RecaptchaComponent]
 })
 export class RegisterComponent implements OnInit {
-	@ViewChild(RecaptchaComponent, {static: false}) captchaRef:RecaptchaComponent;
+	@ViewChild(RecaptchaComponent) captchaRef:RecaptchaComponent;
 
 	environment = environment;
 	loginForm: FormGroup;

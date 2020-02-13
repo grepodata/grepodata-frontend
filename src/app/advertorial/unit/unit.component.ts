@@ -28,8 +28,8 @@ import {hasOwnProperty} from "tslint/lib/utils";
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class UnitComponent implements OnInit, AfterViewInit, OnDestroy {
-	@ViewChild('ins', { read: ElementRef, static: false }) ins: any;
-	@ViewChild('script', { read: ElementRef, static: false }) script: any;
+	@ViewChild('ins', { read: ElementRef }) ins: any;
+	@ViewChild('script', { read: ElementRef }) script: any;
 
 	timeOutRetry: number = 200;
 	adId = 'ad-' + Math.floor(Math.random() * 10000) + 1;

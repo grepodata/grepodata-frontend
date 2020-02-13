@@ -27,7 +27,7 @@ import {JwtService} from "../auth/services/jwt.service";
 })
 export class IndexerComponent implements OnInit {
 
-	@ViewChild('trigger', {static: false}) trigger: MatAutocompleteTrigger;
+	@ViewChild('trigger') trigger: MatAutocompleteTrigger;
 
   world = '';
   key = '';
@@ -287,7 +287,7 @@ export class IndexerComponent implements OnInit {
   providers: [IndexerService, CaptchaService, RecaptchaComponent]
 })
 export class ChangekeyDialog {
-  @ViewChild(RecaptchaComponent, {static: false}) captchaRef:RecaptchaComponent;
+  @ViewChild(RecaptchaComponent) captchaRef:RecaptchaComponent;
 
   contact_mail = '';
   key = '';
@@ -399,7 +399,7 @@ export class ChangekeyDialog {
   providers: [IndexerService, CaptchaService, RecaptchaComponent]
 })
 export class ForgotKeysDialog {
-  @ViewChild(RecaptchaComponent, {static: false}) captchaRef:RecaptchaComponent;
+  @ViewChild(RecaptchaComponent) captchaRef:RecaptchaComponent;
 
   contact_mail = '';
   submitted = false;
@@ -502,7 +502,7 @@ export class ForgotKeysDialog {
   providers: [IndexerService, CaptchaService, SearchService, RecaptchaComponent]
 })
 export class ResetOwnersDialog {
-  @ViewChild(RecaptchaComponent, {static: false}) captchaRef:RecaptchaComponent;
+  @ViewChild(RecaptchaComponent) captchaRef:RecaptchaComponent;
 
   contact_mail = '';
   key = '';
@@ -824,7 +824,7 @@ export class EditOwnersDialog {
 	providers: [IndexerService, CaptchaService, RecaptchaComponent]
 })
 export class CleanIntelDialog {
-	@ViewChild(RecaptchaComponent, {static: false}) captchaRef:RecaptchaComponent;
+	@ViewChild(RecaptchaComponent) captchaRef:RecaptchaComponent;
 
 	contact_mail = '';
 	key = '';
@@ -937,7 +937,7 @@ export class CleanIntelDialog {
   providers: [WorldService, IndexerService, CaptchaService, RecaptchaComponent, LocalCacheService, JwtService]
 })
 export class NewIndexDialog {
-  @ViewChild(RecaptchaComponent, {static: false}) captchaRef:RecaptchaComponent;
+  @ViewChild(RecaptchaComponent) captchaRef:RecaptchaComponent;
 
   contact_mail = '';
 	privacy_agreed = false;

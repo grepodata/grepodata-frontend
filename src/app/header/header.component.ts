@@ -92,7 +92,7 @@ export class HeaderComponent implements OnInit {
   providers: [MessageService, CaptchaService, RecaptchaComponent]
 })
 export class ContactDialog {
-  @ViewChild(RecaptchaComponent, {static: false}) captchaRef:RecaptchaComponent;
+  @ViewChild(RecaptchaComponent) captchaRef:RecaptchaComponent;
 
   contact_message = '';
   contact_mail = '';

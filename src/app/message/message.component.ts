@@ -12,7 +12,7 @@ import {environment} from '../../environments/environment';
   providers: [MessageService, CaptchaService, RecaptchaComponent]
 })
 export class MessageComponent implements OnInit {
-  @ViewChild(RecaptchaComponent, {static: false}) captchaRef:RecaptchaComponent;
+  @ViewChild(RecaptchaComponent) captchaRef:RecaptchaComponent;
 
   contact_message = '';
   contact_name = '';

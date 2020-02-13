@@ -18,7 +18,7 @@ import {hasOwnProperty} from "tslint/lib/utils";
   providers: [AllianceService, WorldService]
 })
 export class AllianceComponent implements AfterViewInit {
-	@ViewChild("infoTabs", {static: false}) infoTabs: ElementRef;
+	@ViewChild("infoTabs") infoTabs: ElementRef;
 
   // Chart vars
   data_default: any[];

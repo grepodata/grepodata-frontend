@@ -12,7 +12,7 @@ import {environment} from "../../../environments/environment";
 	providers: [JwtService, RecaptchaComponent]
 })
 export class ForgotComponent implements OnInit {
-	@ViewChild(RecaptchaComponent, {static: false}) captchaRef:RecaptchaComponent;
+	@ViewChild(RecaptchaComponent) captchaRef:RecaptchaComponent;
 
 	environment = environment;
 	loginForm: FormGroup;
